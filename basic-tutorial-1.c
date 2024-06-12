@@ -37,8 +37,9 @@ tutorial_main(int argc, char *argv[])
    if(SRC != NULL) {
      strcat(filePath, SRC); // todo: usar strncat
    } else {
-      //perror("Error "); 
+     //perror("open"); 
      fprintf(stderr, "error getenv SRC\n");	    
+     exit(EXIT_FAILURE);
    } 
    GstElement *pipeline;
    GstBus *bus;
