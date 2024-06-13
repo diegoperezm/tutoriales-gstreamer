@@ -41,6 +41,7 @@ tutorial_main(int argc, char *argv[])
      fprintf(stderr, "error getenv SRC\n");	    
      exit(EXIT_FAILURE);
    } 
+
    GstElement *pipeline;
    GstBus *bus;
    GstMessage *msg;
